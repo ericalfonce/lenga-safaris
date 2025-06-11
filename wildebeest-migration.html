@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="classic-footer-col classic-footer-booking">
-        <form class="classic-footer-form" id="booking-form" action="https://formsubmit.co/ericgasper1721@gmail.com" method="POST">
+        <form class="classic-footer-form" id="booking-form" method="POST">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <input type="text" name="phone" placeholder="Phone" required>
@@ -112,5 +112,29 @@
       &copy; 2025 Lenga Safari Adventures. All rights reserved.
     </div>
   </footer>
+
+  <script>
+document.getElementById('booking-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch('https://formsubmit.co/ajax/ericgasper1721@gmail.com', {
+    method: 'POST',
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      window.location.href = 'index.html'; // Redirect to home page
+    } else {
+      alert('There was an error submitting the form. Please try again.');
+    }
+  })
+  .catch(() => alert('There was an error submitting the form. Please try again.'));
+});
+</script>
 </body>
 </html>
