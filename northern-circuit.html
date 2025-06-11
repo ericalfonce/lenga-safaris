@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northern Circuit Safari | Lenga Safaris</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="navbar minimalist-navbar">
+    <a href="index.html" class="navbar-logo" style="display: flex; align-items: center; gap: 8px;">
+      <img src="images/IMG-20241213-WA0304-removebg-preview(1).png" alt="Lenga Safari Logo" style="height: 36px;">
+      <span class="navbar-title">Lenga Safaris</span>
+    </a>
+    <nav class="navbar-links">
+      <a href="index.html#tours"><i class="fa-solid fa-binoculars"></i> Tours</a>
+      <a href="index.html#about"><i class="fa-solid fa-info-circle"></i> About</a>
+      <a href="index.html#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+      <a href="mailto:info@lengasafaris.com"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    </nav>
+  </div>
+
+  <header class="hero" style="background-image: url('images/th-1494847037.jpeg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1>Northern Circuit Safari</h1>
+      <h2>Serengeti, Ngorongoro & Tarangire</h2>
+      <p class="hero-subtitle">Explore Tanzania’s most iconic parks with expert guides and unforgettable landscapes.</p>
+      <a href="index.html#booking-form" class="cta">Book This Safari</a>
+      <a href="mailto:info@lengasafaris.com" class="cta secondary-cta">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>About the Northern Circuit</h2>
+    <p>
+      The Northern Circuit is Tanzania’s most celebrated safari route, featuring world-famous destinations like Serengeti National Park, Ngorongoro Crater, and Tarangire National Park. Witness the Great Migration, spot the Big Five, and experience breathtaking landscapes.
+    </p>
+    <ul>
+      <li><strong>Serengeti:</strong> Endless plains and the Great Migration</li>
+      <li><strong>Ngorongoro:</strong> The world’s largest intact volcanic caldera</li>
+      <li><strong>Tarangire:</strong> Majestic baobabs and huge elephant herds</li>
+    </ul>
+    <h3>Sample Itinerary</h3>
+    <ol>
+      <li>Day 1: Arrival in Arusha, transfer to Tarangire National Park</li>
+      <li>Day 2: Game drive in Tarangire, overnight at lodge/camp</li>
+      <li>Day 3: Ngorongoro Crater tour</li>
+      <li>Day 4-6: Serengeti safari and migration tracking</li>
+      <li>Day 7: Return to Arusha or Zanzibar extension</li>
+    </ol>
+    <h3>What's Included</h3>
+    <ul>
+      <li>All park fees and permits</li>
+      <li>Professional English-speaking guide</li>
+      <li>Accommodation and meals</li>
+      <li>Private 4x4 safari vehicle</li>
+      <li>Drinking water during safari</li>
+    </ul>
+    <a href="index.html#booking-form" class="cta">Book Now</a>
+  </section>
+
+  <section class="section section-image" style="background-image: url('images/DSC_0937.jpg');">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/DSC_0937.jpg" alt="Serengeti">
+      <img src="images/DSC_0105.jpg" alt="Ngorongoro">
+      <img src="images/IMG_8494.JPG" alt="Tarangire">
+    </div>
+  </section>
+
+  <footer class="classic-footer">
+    <div class="classic-footer-content">
+      <div class="classic-footer-col classic-footer-logo">
+        <a href="index.html">
+          <img src="images/IMG-20241213-WA0304-removebg-preview(1).png" alt="Lenga Safari Logo" />
+        </a>
+        <div class="classic-footer-brand">Lenga Safaris</div>
+        <div class="classic-footer-contact">
+          <span>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:info@lengasafaris.com" style="color:inherit;text-decoration:underline;">info@lengasafaris.com</a>
+          </span>
+          <span><i class="fa fa-phone"></i> +255 123 456 789</span>
+        </div>
+      </div>
+      <div class="classic-footer-col classic-footer-booking">
+        <form class="classic-footer-form" id="booking-form" action="https://formsubmit.co/info@lengasafaris.com" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="phone" placeholder="Phone" required>
+          <select name="package" required>
+            <option value="">Safari Package</option>
+            <option value="northern">Northern Circuit</option>
+            <option value="wildebeest">Wildebeest Migration</option>
+            <option value="amboseli">Amboseli Safari</option>
+            <option value="zanzibar">Zanzibar Extension</option>
+          </select>
+          <input type="hidden" name="_subject" value="New Safari Booking!">
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+          <button type="submit">Book Now</button>
+          <div class="classic-footer-payments">
+            <img src="images/visa-classic-svgrepo-com.svg" alt="Visa" title="Visa">
+            <img src="images/mastercard-full-svgrepo-com.svg" alt="Mastercard" title="Mastercard">
+            <img src="images/mpesa-logo.svg" alt="Mpesa" title="Mpesa">
+            <img src="images/airtel.svg" alt="Airtel Money" title="Airtel Money">
+          </div>
+          <div class="classic-footer-note">We accept Visa, Mastercard, and major Tanzanian mobile payments.</div>
+        </form>
+      </div>
+      <div class="classic-footer-col classic-footer-social">
+        <div>Follow Us</div>
+        <div class="classic-footer-social-icons">
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/lengasafaris/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/255123456789" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="classic-footer-bottom">
+      &copy; 2025 Lenga Safari Adventures. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

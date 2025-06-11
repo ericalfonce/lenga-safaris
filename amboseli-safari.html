@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amboseli Safari | Lenga Safaris</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="navbar minimalist-navbar">
+    <a href="index.html" class="navbar-logo" style="display: flex; align-items: center; gap: 8px;">
+      <img src="images/IMG-20241213-WA0304-removebg-preview(1).png" alt="Lenga Safari Logo" style="height: 36px;">
+      <span class="navbar-title">Lenga Safaris</span>
+    </a>
+    <nav class="navbar-links">
+      <a href="index.html#tours"><i class="fa-solid fa-binoculars"></i> Tours</a>
+      <a href="index.html#about"><i class="fa-solid fa-info-circle"></i> About</a>
+      <a href="index.html#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+      <a href="mailto:info@lengasafaris.com"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    </nav>
+  </div>
+
+  <header class="hero" style="background-image: url('images/amboseli-national-park-1544135262.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1>Amboseli Safari</h1>
+      <h2>Elephants & Kilimanjaro Views</h2>
+      <p class="hero-subtitle">See Africa’s largest elephants with the majestic Mount Kilimanjaro as your backdrop.</p>
+      <a href="index.html#booking-form" class="cta">Book This Safari</a>
+      <a href="mailto:info@lengasafaris.com" class="cta secondary-cta">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>About Amboseli Safari</h2>
+    <p>
+      Amboseli National Park is famous for its large elephant herds and stunning views of Mount Kilimanjaro. Enjoy game drives, bird watching, and cultural visits with the Maasai.
+    </p>
+    <ul>
+      <li><strong>Highlights:</strong> Elephants, Kilimanjaro, Maasai culture</li>
+      <li><strong>Best Time:</strong> June to October, January to February</li>
+    </ul>
+    <h3>Sample Itinerary</h3>
+    <ol>
+      <li>Day 1: Arrival in Arusha, transfer to Amboseli</li>
+      <li>Day 2-3: Game drives and cultural visits</li>
+      <li>Day 4: Return to Arusha or continue your adventure</li>
+    </ol>
+    <a href="index.html#booking-form" class="cta">Book Now</a>
+  </section>
+
+  <section class="section section-image" style="background-image: url('images/amboseli-national-park-1544135262.jpg');">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/amboseli-national-park-1544135262.jpg" alt="Amboseli">
+      <img src="images/IMG_8450.JPG" alt="Elephants">
+      <img src="images/IMG_8494.JPG" alt="Kilimanjaro">
+    </div>
+  </section>
+
+  <footer class="classic-footer">
+    <div class="classic-footer-content">
+      <div class="classic-footer-col classic-footer-logo">
+        <a href="index.html">
+          <img src="images/IMG-20241213-WA0304-removebg-preview(1).png" alt="Lenga Safari Logo" />
+        </a>
+        <div class="classic-footer-brand">Lenga Safaris</div>
+        <div class="classic-footer-contact">
+          <span>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:info@lengasafaris.com" style="color:inherit;text-decoration:underline;">info@lengasafaris.com</a>
+          </span>
+          <span><i class="fa fa-phone"></i> +255 123 456 789</span>
+        </div>
+      </div>
+      <div class="classic-footer-col classic-footer-booking">
+        <form class="classic-footer-form" id="booking-form" action="https://formsubmit.co/info@lengasafaris.com" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="phone" placeholder="Phone" required>
+          <select name="package" required>
+            <option value="">Safari Package</option>
+            <option value="northern">Northern Circuit</option>
+            <option value="wildebeest">Wildebeest Migration</option>
+            <option value="amboseli">Amboseli Safari</option>
+            <option value="zanzibar">Zanzibar Extension</option>
+          </select>
+          <input type="hidden" name="_subject" value="New Safari Booking!">
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+          <button type="submit">Book Now</button>
+          <div class="classic-footer-payments">
+            <img src="images/visa-classic-svgrepo-com.svg" alt="Visa" title="Visa">
+            <img src="images/mastercard-full-svgrepo-com.svg" alt="Mastercard" title="Mastercard">
+            <img src="images/mpesa-logo.svg" alt="Mpesa" title="Mpesa">
+            <img src="images/airtel.svg" alt="Airtel Money" title="Airtel Money">
+          </div>
+          <div class="classic-footer-note">We accept Visa, Mastercard, and major Tanzanian mobile payments.</div>
+        </form>
+      </div>
+      <div class="classic-footer-col classic-footer-social">
+        <div>Follow Us</div>
+        <div class="classic-footer-social-icons">
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/lengasafaris/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/255123456789" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="classic-footer-bottom">
+      &copy; 2025 Lenga Safari Adventures. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
