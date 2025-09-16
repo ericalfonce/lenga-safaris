@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/amboseli",
+      "destination": "/amboseli-safari.html"
+    },
+    {
+      "source": "/northern",
+      "destination": "/northern-circuit.html"
+    },
+    {
+      "source": "/wildebeest",
+      "destination": "/wildebeest-migration.html"
+    },
+    {
+      "source": "/kilimanjaro",
+      "destination": "/kilimanjaro-safari.html"
+    },
+    {
+      "source": "/zanzibar",
+      "destination": "/zanzibar-extension.html"
+    }
+  ]
+}
