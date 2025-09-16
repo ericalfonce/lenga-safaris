@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kilimanjaro Safari | Lenga Safaris</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="amboseli-safari.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -32,30 +33,62 @@
     </div>
   </header>
 
-  <section class="section">
-    <h2>About Amboseli Safari</h2>
-    <p>
-      Amboseli National Park is famous for its large elephant herds and stunning views of Mount Kilimanjaro. Enjoy game drives, bird watching, and cultural visits with the Maasai.
-    </p>
-    <ul>
-      <li><strong>Highlights:</strong> Elephants, Kilimanjaro, Maasai culture</li>
-      <li><strong>Best Time:</strong> June to October, January to February</li>
-    </ul>
-    <h3>Sample Itinerary</h3>
-    <ol>
-      <li>Day 1: Arrival in Arusha, transfer to Amboseli</li>
-      <li>Day 2-3: Game drives and cultural visits</li>
-      <li>Day 4: Return to Arusha or continue your adventure</li>
-    </ol>
-    <a href="index.html#booking-form" class="cta">Book Now</a>
-  </section>
+  <section id="kilimanjaro-safari" class="amboseli-section reveal-on-scroll">
+    <div class="container">
+      <h2>🐘 Kilimanjaro Safari – Elephants & Majestic Views</h2>
+      <p>
+        Experience the grandeur of <strong>Africa’s wildlife</strong> with the iconic <strong>Mount Kilimanjaro</strong> as your backdrop. The Kilimanjaro Safari offers a perfect combination of wildlife adventure, breathtaking landscapes, and unforgettable photographic moments.
+      </p>
 
-  <section class="section section-image" style="background-image: url('images/amboseli-national-park-1544135262.jpg');">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/amboseli-national-park-1544135262.jpg" alt="Amboseli">
-      <img src="images/IMG_8450.JPG" alt="Elephants">
-      <img src="images/IMG_8494.JPG" alt="Kilimanjaro">
+      <h3>🌄 Stunning Landscapes & Natural Beauty</h3>
+      <p>
+        From rolling savannahs dotted with acacia trees to the snow-capped peaks of Mount Kilimanjaro, this safari immerses you in <strong>a diversity of ecosystems</strong>. Watch the morning mist rise over the plains as elephants, giraffes, and zebras roam freely beneath Africa’s highest peak.
+      </p>
+
+      <h3>🐘 Wildlife Encounters</h3>
+      <p>
+        Kilimanjaro Safari is famous for <strong>its large elephant herds</strong>, often seen strolling across the plains or near riverbanks. You’ll also encounter lions lounging in the shade, leopards stalking their prey, buffaloes grazing peacefully, and rhinos in protected zones. Bird enthusiasts will delight in the abundant species, from colorful bee-eaters to majestic eagles.
+      </p>
+
+      <h3>🎒 Activities & Experiences</h3>
+      <div class="benefits-cards">
+        <div class="benefit-card">
+          <i class="fa-solid fa-car"></i>
+          <span><strong>Guided Game Drives:</strong> Explore the plains in 4x4 vehicles with experienced guides, offering close encounters and expert insights.</span>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-person-hiking"></i>
+          <span><strong>Nature Walks:</strong> Short guided walks to explore local flora, spot smaller wildlife, and enjoy breathtaking viewpoints of Kilimanjaro.</span>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-camera"></i>
+          <span><strong>Photography Safaris:</strong> Capture the majestic wildlife against the stunning mountain backdrop – perfect for both amateurs and professionals.</span>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-solid fa-sun"></i>
+          <span><strong>Sunrise & Sunset Viewing:</strong> Witness the plains bathed in golden light as the mountain creates a spectacular silhouette against the sky.</span>
+        </div>
+      </div>
+
+      <h3>📅 Best Time to Visit</h3>
+      <p>
+        The Kilimanjaro Safari can be enjoyed year-round, but the <strong>dry seasons</strong> (June–October and January–February) are ideal for wildlife viewing, as animals gather near water sources and the weather is clear for mountain vistas.
+      </p>
+
+      <h3>🌿 Cultural & Local Experiences</h3>
+      <p>
+        Enhance your safari with visits to local Maasai villages at the foot of Mount Kilimanjaro. Learn about traditional customs, participate in local dances, and understand the connection between the Maasai people and the wildlife that surrounds them.
+      </p>
+
+      <h3>📸 Unforgettable Memories</h3>
+      <p>
+        Whether it’s capturing elephants strolling across the plains, enjoying a quiet moment beneath Kilimanjaro’s shadow, or marveling at the colors of an African sunset, the Kilimanjaro Safari offers <strong>once-in-a-lifetime experiences</strong> for adventurers, families, and nature lovers alike.
+      </p>
+
+      <blockquote class="highlight-quote">
+        <strong>Book your Kilimanjaro Safari now and witness Africa’s largest elephants with breathtaking mountain vistas!</strong>
+      </blockquote>
+      <a href="#booking-form" class="cta secondary-cta">Book Now</a>
     </div>
   </section>
 
@@ -115,27 +148,41 @@
   </footer>
 
   <script>
-document.getElementById('booking-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const form = e.target;
-  const data = new FormData(form);
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
 
-  fetch('https://formsubmit.co/ajax/ericgasper1721@gmail.com', {
-    method: 'POST',
-    body: data,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      window.location.href = 'index.html'; // Redirect to home page
-    } else {
-      alert('There was an error submitting the form. Please try again.');
-    }
-  })
-  .catch(() => alert('There was an error submitting the form. Please try again.'));
-});
-</script>
+      fetch('https://formsubmit.co/ajax/ericgasper1721@gmail.com', {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          window.location.href = 'index.html'; // Redirect to home page
+        } else {
+          alert('There was an error submitting the form. Please try again.');
+        }
+      })
+      .catch(() => alert('There was an error submitting the form. Please try again.'));
+    });
+
+    // Reveal on scroll effect
+    document.addEventListener('DOMContentLoaded', function() {
+      function revealOnScroll() {
+        document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            el.classList.add('visible');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll();
+    });
+  </script>
 </body>
 </html>

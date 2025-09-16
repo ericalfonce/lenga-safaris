@@ -1,0 +1,183 @@
+/* Reveal on scroll effect */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.23,1,.32,1);
+}
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Section container */
+.wildebeest-section {
+  padding: 0 1.5rem 0; /* 0.2rem top, 1.5rem bottom */
+  background: #f5f7fa;
+}
+.wildebeest-section .container {
+  margin-top: 0; /* Remove any extra margin */
+  padding-top: 0.5rem; /* Minimal top padding inside container */
+  padding-bottom: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+/* Highlights list */
+.highlights-list {
+  margin-bottom: 2rem;
+  padding-left: 0;
+  list-style: none;
+}
+.highlights-list li {
+  background: #fffbe6;
+  border-left: 5px solid #e2b007;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.05rem;
+}
+
+/* Best time grid */
+.best-time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.time-card {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(226,176,7,0.08);
+  text-align: center;
+}
+.time-card h4 {
+  color: #e2b007;
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline style */
+.itinerary-timeline {
+  border-left: 3px solid #e2b007;
+  margin: 2rem 0 2rem 1.5rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  min-height: 2.2rem;
+  display: grid;
+  grid-template-columns: 32px 110px 1fr;
+  align-items: center;
+}
+.timeline-item::before {
+  content: '';
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  width: 1rem;
+  height: 1rem;
+  background: #e2b007;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.timeline-day {
+  grid-column: 2;
+  font-weight: bold;
+  color: #e2b007;
+  text-align: right;
+  margin-right: 0.5rem;
+  min-width: 90px;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+}
+.timeline-desc {
+  grid-column: 3;
+  margin-left: 0.5rem;
+  flex: 1;
+  text-align: left;
+}
+
+/* Benefits cards - shine effect */
+.benefits-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.benefit-card {
+  background: #ffdd00;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 220px;
+  flex: 1 1 220px;
+  font-size: 1rem;
+}
+.benefit-card i {
+  color: #043414;
+  font-size: 1.3em;
+}
+
+/* Highlight quote */
+.highlight-quote {
+  background: #fffbe6;
+  border-left: 5px solid #e2b007;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+/* CTA button */
+.cta.secondary-cta {
+  background: #e2b007;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.cta.secondary-cta:hover {
+  background: #c9a006;
+}
+
+/* Headings */
+.wildebeest-section h2, 
+.wildebeest-section h3 {
+  color: #2d3a4a;
+  margin-top: 1.5rem;
+}
+.wildebeest-section h4 {
+  color: #e2b007;
+  margin-top: 1rem;
+}
+
+/* Utility */
+.wildebeest-section p {
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .best-time-grid, .benefits-cards {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+  }
+  .itinerary-timeline {
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+  }
+}
