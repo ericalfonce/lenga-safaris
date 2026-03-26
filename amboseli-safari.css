@@ -1,3 +1,6 @@
+/* amboseli-safari.css — page-specific styles only */
+/* Shared nav, hero, footer, tokens loaded via style.css */
+
 /* Reveal on scroll effect */
 .reveal-on-scroll {
   opacity: 0;
@@ -12,17 +15,16 @@
 /* Section container */
 .amboseli-section {
   padding: 0.5rem 0 2rem 0;
-  background: #f5f7fa;
+  background: var(--ivory);
 }
 .amboseli-section .container {
-  margin-top: 0;
   padding-top: 1rem;
   padding-bottom: 2rem;
   max-width: 900px;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
 
 /* Destinations grid */
@@ -33,15 +35,14 @@
   margin-bottom: 2rem;
 }
 .destination-card {
-  background: #f8f8f8;
-  border-radius: 8px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 /* Timeline style */
 .itinerary-timeline {
-  border-left: 3px solid #e2b007;
+  border-left: 3px solid var(--gold);
   margin: 2rem 0 2rem 1.5rem;
   padding-left: 2.5rem;
   position: relative;
@@ -62,14 +63,14 @@
   align-self: center;
   width: 1rem;
   height: 1rem;
-  background: #e2b007;
+  background: var(--gold);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .timeline-day {
   grid-column: 2;
-  font-weight: bold;
-  color: #e2b007;
+  font-weight: 600;
+  color: var(--gold);
   text-align: right;
   margin-right: 0.5rem;
   min-width: 90px;
@@ -79,11 +80,10 @@
 .timeline-desc {
   grid-column: 3;
   margin-left: 0.5rem;
-  flex: 1;
   text-align: left;
 }
 
-/* Benefits cards - shine effect */
+/* Benefits cards */
 .benefits-cards {
   display: flex;
   flex-wrap: wrap;
@@ -91,10 +91,9 @@
   margin-bottom: 2rem;
 }
 .benefit-card {
-  background: #ffdd00;
-  border-radius: 8px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -103,55 +102,31 @@
   font-size: 1rem;
 }
 .benefit-card i {
-  color: #043414;
+  color: var(--gold);
   font-size: 1.3em;
 }
 
-
-/* Highlight quote */
-.highlight-quote {
-  background: #fffbe6;
-  border-left: 5px solid #e2b007;
-  padding: 1rem 1.5rem;
-  margin: 2rem 0;
-  font-size: 1.1rem;
-  border-radius: 6px;
-}
-
-/* CTA button */
-.cta.secondary-cta {
-  background: #e2b007;
-  color: #fff;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background 0.2s;
-}
-.cta.secondary-cta:hover {
-  background: #c9a006;
-}
-
 /* Headings */
-.amboseli-section h2, 
+.amboseli-section h2,
 .amboseli-section h3 {
-  color: #2d3a4a;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--green-dark);
   margin-top: 1.5rem;
+  font-weight: 400;
 }
 .amboseli-section h4 {
-  color: #e2b007;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--gold);
   margin-top: 1rem;
 }
 
 /* Utility */
 .amboseli-section p {
   color: #444;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 700px) {
   .destinations-grid, .benefits-cards {
     grid-template-columns: 1fr !important;
