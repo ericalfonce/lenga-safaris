@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lengasafaris.com/sitemap.xml
