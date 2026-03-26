@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wildebeest Migration | Lenga Safaris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="wildebeest-migration.css" />
   <link rel="icon" type="image/png" href="images/favicon.ico" />
@@ -16,10 +18,10 @@
       <span class="navbar-title">Lenga Safaris</span>
     </a>
     <nav class="navbar-links">
-      <a href="index.html#tours"><i class="fa-solid fa-binoculars"></i> Tours</a>
-      <a href="index.html#about"><i class="fa-solid fa-info-circle"></i> About</a>
-      <a href="index.html#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
-      <a href="mailto:info@lengasafaris.com"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      <a href="index.html#tours">Tours</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="mailto:info@lengasafaris.com">Contact Us</a>
     </nav>
   </div>
 
@@ -222,6 +224,21 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll();
 });
+</script>
+<script>
+(function() {
+  var navbar = document.querySelector('.navbar.minimalist-navbar');
+  if (!navbar) return;
+  function updateNav() {
+    if (window.scrollY > 80) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+})();
 </script>
 </body>
 </html>
