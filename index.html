@@ -37,10 +37,10 @@
     <span class="navbar-title">Lenga Safaris</span>
   </a>
   <nav class="navbar-links">
-    <a href="#tours"><i class="fa-solid fa-binoculars"></i> Tours</a>
-    <a href="#about"><i class="fa-solid fa-info-circle"></i> About</a>
-    <a href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
-    <a href="mailto:info@lengasafaris.com"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    <a href="#tours">Tours</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="mailto:info@lengasafaris.com">Contact Us</a>
   </nav>
 </div>
 
@@ -370,6 +370,21 @@
   <a href="#" class="back-to-top" aria-label="Back to top">
   <i class="fa fa-arrow-up"></i>
 </a>
+<script>
+(function() {
+  var navbar = document.querySelector('.navbar.minimalist-navbar');
+  if (!navbar) return;
+  function updateNav() {
+    if (window.scrollY > 80) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+})();
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   function revealOnScroll() {
